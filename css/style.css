@@ -1,0 +1,33 @@
+body {
+	background: url(../images/noise.png);
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+article {
+	width: 250px;
+	height: 150px;
+	margin: 20px;
+	background: #FFF;
+	float: left;
+	position: realtive;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.30);
+	   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.30);
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.30);
+}
+	article.open {
+		background: #333;
+		color: #FFF;
+	}
+	article.transition {
+		-webkit-transition: all 0.4s ease;
+		   -moz-transition: all 0.4s ease;
+			 -o-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+	}

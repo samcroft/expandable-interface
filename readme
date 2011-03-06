@@ -1,0 +1,29 @@
+Beginnings of a jQuery plugin that takes floated elements, positions them absolutely and allows them to expand fullscreen and then return to their original (floated, but absolute) position — using CSS3 transitions.
+
+Resizing the window allows the elements to re-float and then generate new absolute positions.
+
+Usage
+
+$('section').expandableui();
+
+<section>
+	<article></article>
+	<article></article>
+	<article></article>
+	<article></article>
+	<article></article>
+	<article></article>
+	<article></article>
+	<article></article>
+</section>
+
+Click any article to expand to fullscreen. Click article again to return to starting size.
+
+
+Issues/bugs/to-do
+
+- Not tested in IE, although should work... sans transitions
+- Rapid double clicking will break things - need to ensure that rapid consecutive clicks destroy previous events (could be the timeouts that are causing this)
+- Quite a few chaining quirks that has resulted in having to use a few kludges for now - will re-write
+- To prevent an initial 'fanning-out' animation have had to add the transition properties during the event, rather than beforehand
+- Only my second jQuery plugin, unsure as to how functions within plugins should be constructed
